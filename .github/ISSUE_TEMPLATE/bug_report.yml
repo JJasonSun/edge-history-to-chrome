@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible problem using synthetic browser data.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not upload a real browser export, `places.sqlite`, passwords, cookies, autofill values, or screenshots containing private URLs. Replace private values with `example.com` data.
+  - type: input
+    id: version
+    attributes:
+      label: Tool version or commit
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use synthetic values and omit local usernames and paths.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+    validations:
+      required: true

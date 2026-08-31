@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Browser exports and generated profiles contain private data.
+*.csv
+*.sqlite
+*.sqlite-*
+profiles.ini
+profiles.ini.*
+compatibility.ini
+edge-history-to-chrome-*/
+**/.edge-history-to-chrome.json
+*.bak
